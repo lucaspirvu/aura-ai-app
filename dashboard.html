@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080b12" />
+    <title>AURA AI — Chat workspace</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">a</span><strong>AURA</strong></div>
+      <nav class="menu" aria-label="Navigare principală">
+        <button class="menu-item active"><span>⌂</span><b>Home</b></button>
+        <button class="menu-item"><span>▣</span><b>Stream Panel</b></button>
+        <p class="menu-label">STREAM</p>
+        <button class="menu-item"><span>◇</span><b>Scenes</b><em>BETA</em></button>
+        <button class="menu-item"><span>✦</span><b>Automations</b><em>BETA</em></button>
+        <button class="menu-item"><span>⌁</span><b>Activities</b></button>
+        <button class="menu-item"><span>⌕</span><b>Analytics</b></button>
+        <p class="menu-label">ASSISTANT</p>
+        <button class="menu-item"><span>⇄</span><b>Integrations</b></button>
+        <button class="menu-item"><span>○</span><b>Routines</b><em>BETA</em></button>
+        <button class="menu-item"><span>▦</span><b>Planner</b><em>BETA</em></button>
+        <button class="menu-item"><span>♫</span><b>Music</b><em>BETA</em></button>
+      </nav>
+      <div class="user-card"><div class="avatar">L</div><div><strong>Lucas123</strong><small><i></i> Free · Upgrade</small></div><button aria-label="Opțiuni utilizator">⋮</button></div>
+    </aside>
+
+    <main class="workspace">
+      <header class="topbar">
+        <nav class="platforms" aria-label="Platforme">
+          <button><span class="dot twitch"></span>Twitch</button>
+          <button><span class="dot obs"></span>OBS</button>
+          <button><span class="dot youtube"></span>YouTube</button>
+          <button><span class="dot discord"></span>Discord</button>
+          <button class="muted">Gmail</button>
+        </nav>
+        <div class="top-actions"><button class="icon-btn" aria-label="Sunet">◉</button><button class="voice-mode">◉ <span>Switch to voice mode</span></button></div>
+      </header>
+
+      <section class="chat-area">
+        <div class="conversation" id="conversation">
+          <article class="message assistant">
+            <div class="meta"><span>✦</span>AURA <time>09:41</time></div>
+            <div class="bubble">Hey! Welcome back. Ce facem astăzi — pregătim streamul, automatisări sau verificăm integrarea OBS?</div>
+          </article>
+          <article class="message user"><div class="meta">Te-am auzit <time>09:42</time></div><div class="bubble">Vreau să îmi ajută chatul și streamul.</div></article>
+          <article class="message assistant"><div class="meta"><span>✦</span>AURA <time>09:42</time></div><div class="bubble">Perfect. Pot controla comenzile demo, răspunde la mesaje și urmări activitățile unui stream într-o singură interfață.</div></article>
+        </div>
+
+        <form class="composer" id="composer">
+          <input id="chatInput" type="text" placeholder="Ask AURA anything…" autocomplete="off" aria-label="Mesaj pentru AURA" />
+          <button class="send" type="submit" aria-label="Trimite">↑</button>
+        </form>
+      </section>
+
+      <div class="status"><span>✦</span><div><strong>AURA</strong><small>Ready</small></div></div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
