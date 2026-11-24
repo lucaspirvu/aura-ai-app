@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="chat.css" />
   </head>
   <body>
     <div class="ambient ambient-one"></div>
@@ -74,6 +75,28 @@
       <button id="voiceButton" class="mic-button" aria-label="Start voice demo"><span>◉</span></button>
       <div><small>AURA IS READY</small><strong id="dockText">Tap to start speaking</strong></div>
     </div>
+
+    <section class="chat-widget" id="chatWidget" aria-label="Chat AURA AI" aria-hidden="true">
+      <header class="chat-header">
+        <div class="chat-avatar">✦</div>
+        <div class="chat-heading"><strong>Chat cu AURA</strong><span><i></i> Demo interactiv</span></div>
+        <button class="chat-close" id="chatClose" aria-label="Închide chatul">×</button>
+      </header>
+      <div class="chat-messages" id="chatMessages" role="log" aria-live="polite">
+        <div class="chat-message aura-message"><span class="message-avatar">✦</span><div class="message-bubble">Salut! Sunt AURA. Scrie o comandă de test, de exemplu „deschide YouTube” sau „schimbă scena la gaming”.</div></div>
+      </div>
+      <div class="chat-suggestions" aria-label="Comenzi sugerate">
+        <button type="button" data-prompt="Deschide YouTube">Deschide YouTube</button>
+        <button type="button" data-prompt="Schimbă scena la gaming">Scena gaming</button>
+      </div>
+      <form class="chat-compose" id="chatForm">
+        <label class="visually-hidden" for="chatInput">Scrie un mesaj</label>
+        <input id="chatInput" name="message" type="text" placeholder="Scrie o comandă…" autocomplete="off" maxlength="240" />
+        <button type="submit" aria-label="Trimite mesaj">↑</button>
+      </form>
+      <p class="chat-note">Demo: comenzile pentru aplicații desktop sunt simulate.</p>
+    </section>
+    <button class="chat-launcher" id="chatLauncher" aria-label="Deschide chatul cu AURA"><span>✦</span><b>Chat cu AURA</b></button>
 
     <script src="app.js"></script>
   </body>
