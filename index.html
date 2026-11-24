@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#05070f" />
+    <title>AURA AI — Your stream, on autopilot</title>
+    <meta name="description" content="AURA AI is an intelligent creative copilot for modern streamers." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <nav class="nav">
+      <a class="brand" href="#" aria-label="AURA AI acasă">
+        <span class="brand-mark"><span></span></span>
+        <span>AURA <b>AI</b></span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#demo">Demo</a>
+        <a href="#integrations">Integrations</a>
+      </div>
+      <button class="nav-cta" data-scroll="demo">Try AURA <span>↗</span></button>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow"><span></span> The intelligent stream companion</div>
+        <h1>Your stream.<br /><em>One voice away.</em></h1>
+        <p class="hero-copy">Control your creative world, automate the routine and stay connected with your audience — naturally.</p>
+        <div class="hero-actions">
+          <button class="primary-btn" data-scroll="demo"><span class="play-icon">▶</span> Launch demo</button>
+          <a class="text-link" href="#features">Explore features <span>↓</span></a>
+        </div>
+
+        <div class="orbital-stage" id="demo">
+          <div class="orbital-grid"></div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit-dot dot-one"></div>
+          <div class="orbit-dot dot-two"></div>
+          <div class="orbital-core">
+            <div class="core-rings"><span class="core-ring ring-one"></span><span class="core-ring ring-two"></span><span class="core-ring ring-three"></span></div>
+            <div class="core-symbol"><span></span></div>
+            <div class="voice-status"><span class="pulse-dot"></span><b id="voiceStatus">Listening</b></div>
+          </div>
+          <aside class="command-card">
+            <div class="command-label">LATEST COMMAND</div>
+            <div class="command-text" id="commandText">“Switch to the gaming scene”</div>
+            <div class="command-result"><span>✓</span><b>Scene changed</b></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="feature-strip" id="features">
+        <article><div class="feature-icon">⌁</div><h3>Natural voice</h3><p>Give commands exactly as you would speak.</p></article>
+        <article><div class="feature-icon">◫</div><h3>Scene control</h3><p>Change layouts and sources in an instant.</p></article>
+        <article><div class="feature-icon">✦</div><h3>Smart moments</h3><p>Keep track of highlights while you create.</p></article>
+      </section>
+
+      <section class="integrations" id="integrations">
+        <p class="section-kicker">A CONNECTED WORKSPACE</p>
+        <h2>Built to work with your setup.</h2>
+        <div class="integration-row"><span>OBS</span><span>TWITCH</span><span>YOUTUBE</span><span>DISCORD</span><span>SPOTIFY</span></div>
+      </section>
+    </main>
+
+    <div class="voice-dock">
+      <button id="voiceButton" class="mic-button" aria-label="Start voice demo"><span>◉</span></button>
+      <div><small>AURA IS READY</small><strong id="dockText">Tap to start speaking</strong></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
